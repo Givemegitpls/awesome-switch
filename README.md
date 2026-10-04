@@ -114,6 +114,8 @@
 - [nextendo-nex](https://github.com/NextendoNetwork/nextendo-nex) — реализация протокола NEX/PRUDP с нуля на Go, ядро серверов Nextendo.
 - [NextendoNetwork](https://github.com/orgs/NextendoNetwork/repositories) — серверы под конкретные игры: Mario Kart 8 Deluxe, Splatoon 2/3, Smash Ultimate, Animal Crossing: New Horizons, Super Mario Maker 2 и другие. Плюс инфраструктура (`nextendo-account`, `nx-dauth`, `nx-scsi`, `nextendo-nncs`).
 
+## Эмуляторы
+
 - [RetroArch](https://github.com/libretro/RetroArch) — оболочка с ядрами от NES до PS1 и аркад.
 - [ppsspp-nx](https://github.com/NaGaa95/ppsspp-nx) — PSP.
 - [DrasticDS_nx](https://github.com/NaGaa95/DrasticDS_nx) — Nintendo DS.
