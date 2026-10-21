@@ -134,11 +134,17 @@
 
 Рекомпиляции Xbox 360 (движок [ReXGlue](https://github.com/rexglue/rexglue-sdk)):
 
-- [nfsmw-nx](https://github.com/StevensND/nfsmw-nx) — Need for Speed: Most Wanted (2005), 30 FPS без разгона. `со своими копиями игры`
-- [nfsu2-sw](https://github.com/antoxa2584x/nfsu2-sw) — Need for Speed: Underground 2 (Xbox), лифт в C через xboxrecomp; Linux и Switch NRO. `со своими копиями игры`
+- [nfsmw-nx](https://github.com/StevensND/nfsmw-nx) — Need for Speed: Most Wanted (2005), 30 FPS без разгона; сборка под своё издание и шейдеры из диска через [браузерный инсталлятор](https://stevensnd.github.io/nfsmw-nx-installer/). `со своими копиями игры`
 - [UnleashedRecomp-NX](https://github.com/NaGaa95/UnleashedRecomp-NX) — Sonic Unleashed.
 - [MarathonRecomp-NX](https://github.com/NaGaa95/MarathonRecomp-NX) — Sonic the Hedgehog (2006).
 - [skate3recomp-nx](https://github.com/NaGaa95/skate3recomp-nx) — Skate 3.
+
+Рекомпиляции оригинального Xbox (движок [xboxrecomp](https://github.com/sp00nznet/xboxrecomp)), общий рантайм, Vulkan (NVK) и OpenGL:
+
+- [nfsu1-sw](https://github.com/antoxa2584x/nfsu1-sw) — Need for Speed: Underground, на консоли меню и Quick Race в 30 FPS, карьера не тестировалась. `со своими копиями игры`
+- [nfsu2-sw](https://github.com/antoxa2584x/nfsu2-sw) — Need for Speed: Underground 2, на консоли фильмы, профиль, меню и гонки. `со своими копиями игры`
+- [nfsc-sw](https://github.com/antoxa2584x/nfsc-sw) — Need for Speed: Carbon, на Switch пока только базовый запуск: NRO собираются и грузятся, гонки — на Linux. `со своими копиями игры`
+- [flatout2-sw](https://github.com/antoxa2584x/flatout2-sw) — FlatOut 2: карьера, профили, видео. `со своими копиями игры`
 
 Порты на базе Android-сборок: игра запускается как есть под Horizon OS через слой-обёртку. Всем нужны свои файлы игры (`со своими копиями игры`).
 
@@ -186,6 +192,14 @@
 - Вокруг порта есть экосистема модов: [радио-редактор](https://github.com/Geekmaxxer/gta-radio-editor), [обновлятор gameconfig.xml](https://github.com/Geekmaxxer/GTA5SwitchGCUpdater), [SDK для меню](https://github.com/Geekmaxxer/GTA5NX-MG-Menu).
 - Инструкция опирается на Tinfoil/sigpatches — это [серая зона](#серая-зона).
 
+### GTA IV на Switch
+
+Порт на базе [LibertyRecomp](https://github.com/OZORDI/LibertyRecomp) и [ReXGlue](https://github.com/rexglue/rexglue-sdk): код Xbox 360 статически рекомпилирован в ARM, графика — нативный Vulkan.
+
+- [GTA4NX](https://github.com/kabba536/Grand-Theft-Auto-IV-Native-Port-Nintendo-Switch) — играбельная сборка (Xbox 360 USA + Title Update 8): интерьеры 25–28 FPS, город ~15–20, тяжёлые места ~11 на стоковых частотах. Внутреннее разрешение 640x360 с FSR 1, урезанная дальность прорисовки, в портативе медленнее. Автор помечает её как приватный тест-билд. `со своими копиями игры`
+- [GTA4NX-Core3-Fix](https://github.com/koren699/GTA4NX-Core3-Fix) — патч `main.npdm`: разрешает порту третье ядро для аудиопотока, лечит заикания звука. Стабильные 30 FPS не обещает.
+- [ProjectTM](https://github.com/iy26adchak/ProjectTM) — независимый рекомпилятор той же игры, около 20% готовности: доходит до миссии «The Cousins Bellic». `со своими копиями игры`
+
 Декомпиляции и открытые движки:
 
 - [Ship of Harkinian](https://github.com/HarbourMasters/Shipwright) — Ocarina of Time.
@@ -213,6 +227,7 @@
 
 - [devkitPro](https://github.com/devkitPro) — devkitA64, libnx, порты библиотек.
 - [switch-cmake](https://github.com/vbe0201/switch-cmake) — CMake-тулчейн.
+- [Ghidra-Switch-Loader](https://github.com/StevensND/Ghidra-Switch-Loader) — загрузчик NSO/NRO для Ghidra.
 - [borealis](https://github.com/natinusala/borealis) — UI-библиотека в стиле системного меню.
 - [Homebrodot / Godot](https://github.com/Homebrodot/Godot) — Godot для homebrew-платформ, есть Switch-порт ([D3fau4/godot](https://github.com/D3fau4/godot)).
 - [nx-dev](https://github.com/D3fau4/nx-dev) — Docker-образ для сборки под libnx.
