@@ -132,21 +132,90 @@
 
 ## Нативные порты и рекомпиляции
 
-Рекомпиляции Xbox 360 (движок [ReXGlue](https://github.com/rexglue/rexglue-sdk)):
+Порты сгруппированы по платформе, с которой перенесена игра. Внутри — статические рекомпиляции ([ReXGlue](https://github.com/rexglue/rexglue-sdk) для Xbox 360, [xboxrecomp](https://github.com/sp00nznet/xboxrecomp) для оригинального Xbox, N64Recomp, PSXRecomp), декомпиляции и порты открытых движков. Рекомпиляциям нужны свои файлы игры (`со своими копиями игры`).
+
+### Xbox 360 / XBLA
 
 - [nfsmw-nx](https://github.com/StevensND/nfsmw-nx) — Need for Speed: Most Wanted (2005), 30 FPS без разгона; сборка под своё издание и шейдеры из диска через [браузерный инсталлятор](https://stevensnd.github.io/nfsmw-nx-installer/). `со своими копиями игры`
 - [UnleashedRecomp-NX](https://github.com/NaGaa95/UnleashedRecomp-NX) — Sonic Unleashed.
 - [MarathonRecomp-NX](https://github.com/NaGaa95/MarathonRecomp-NX) — Sonic the Hedgehog (2006).
 - [skate3recomp-nx](https://github.com/NaGaa95/skate3recomp-nx) — Skate 3.
+- [the-simpsons-game-nx](https://github.com/R-drg/the-simpsons-game-nx) — The Simpsons Game: статическая рекомпиляция с нативным Vulkan. `со своими копиями игры`
+- [sa2-nx](https://github.com/ChanseyIsTheBest/sa2-nx) — Sonic Adventure 2 (XBLA), ReXGlue и Vulkan на NVK. `со своими копиями игры`
+- [sc5p2-nx](https://github.com/BiroGrafx/sc5p2-nx) — Space Channel 5 Part 2, сестринский порт к sa2-nx. `со своими копиями игры`
+- [peggle1-nx](https://github.com/ChanseyIsTheBest/peggle1-nx) — Peggle (XBLA). `со своими копиями игры`
+- [nfscarbon-nx](https://github.com/Kaays/nfscarbon-nx) — Need for Speed: Carbon (версия Xbox 360). `со своими копиями игры`
+- [fear-nx](https://github.com/infriker/fear-nx) — F.E.A.R., ReXGlue и нативный Vulkan. `со своими копиями игры`
+- [BO2-Requiem-NX](https://github.com/HDErick/BO2-Requiem-NX) — Call of Duty: Black Ops II, проект Requiem. `со своими копиями игры`
+- [dantes-inferno-nx](https://github.com/VasilkovND/dantes-inferno-nx) — Dante's Inferno, сборка из исходников со своим диском. `со своими копиями игры`
+- [ds2-nx](https://github.com/VasilkovND/ds2-nx) — Dead Space 2, тот же подход: исходники плюс своя копия игры. `со своими копиями игры`
+- [usf4-nx](https://github.com/Thorhax/usf4-nx) — Ultra Street Fighter IV, ReXGlue, игровых данных в репозитории нет. `со своими копиями игры`
+- [green-lantern-switch](https://github.com/KhakiHorizonBr/green-lantern-switch) — Green Lantern: Rise of the Manhunters, экспериментальный порт рантайма и Vulkan-рендера. `со своими копиями игры`
+- [LostOdysseyRecomp](https://github.com/Ad0ky/LostOdysseyRecomp) — Lost Odyssey, экспериментальная рекомпиляция (форк freefrank/LostOdysseyRecomp). `со своими копиями игры`
+- [Mercenaries2-NX](https://github.com/penettrator/Mercenaries2-NX) — Mercenaries 2: World in Flames, нужен образ с `default.xex` конкретной ревизии. `со своими копиями игры`
+- [prototype-switch](https://github.com/fungalspores/prototype-switch) — Prototype (2009) и Prototype 2 в одном проекте. `со своими копиями игры`
+- [prototype2-nx](https://github.com/penettrator/Prototype2-NX) — альтернативный Prototype 2: форвардер NSP и разрешение на четыре ядра. `со своими копиями игры`
+- [project8-sw](https://github.com/R-drg/project8-sw) — Tony Hawk's Project 8, ReXGlue и нативный Vulkan. `со своими копиями игры`
+- [project8recomp_nx](https://github.com/SubterraneanHomesickAyan/project8recomp_nx) — второй порт Project 8, уже на базе Project8Recomp. `со своими копиями игры`
 
-Рекомпиляции оригинального Xbox (движок [xboxrecomp](https://github.com/sp00nznet/xboxrecomp)), общий рантайм, Vulkan (NVK) и OpenGL:
+### Xbox (оригинальный)
+
+Общий рантайм xboxrecomp, Vulkan (NVK) и OpenGL:
 
 - [nfsu1-sw](https://github.com/antoxa2584x/nfsu1-sw) — Need for Speed: Underground, на консоли меню и Quick Race в 30 FPS, карьера не тестировалась. `со своими копиями игры`
 - [nfsu2-sw](https://github.com/antoxa2584x/nfsu2-sw) — Need for Speed: Underground 2, на консоли фильмы, профиль, меню и гонки. `со своими копиями игры`
 - [nfsc-sw](https://github.com/antoxa2584x/nfsc-sw) — Need for Speed: Carbon, на Switch пока только базовый запуск: NRO собираются и грузятся, гонки — на Linux. `со своими копиями игры`
 - [flatout2-sw](https://github.com/antoxa2584x/flatout2-sw) — FlatOut 2: карьера, профили, видео. `со своими копиями игры`
+- [burnout3-sw](https://github.com/antoxa2584x/burnout3-sw) — Burnout 3: Takedown, форк sp00nznet/burnout3. `со своими копиями игры`
+- [defjam-sw](https://github.com/R-drg/defjam-sw) — Def Jam: Fight for NY, статическая рекомпиляция. `со своими копиями игры`
+- [halo-ce-universal](https://github.com/thelinkin3000/halo-ce-universal) — Halo: Combat Evolved на OpenCE, рендер deko3d. `со своими копиями игры`
+- [mcdub3-nx](https://github.com/laureladastra/mcdub3-nx) — Midnight Club 3: DUB Edition; тот же код собирается под Linux, macOS и Windows. `со своими копиями игры`
+- [SpiderMan2-2004-NX](https://github.com/SantiBros/SpiderMan2-2004-NX) — Spider-Man 2 (2004). `со своими копиями игры`
+- [mksm-nx](https://github.com/BlekjekSudo/mksm-nx) — Mortal Kombat: Shaolin Monks. `со своими копиями игры`
+- [mkda-nx](https://github.com/FOTLabs/mkda-nx) — Mortal Kombat: Deadly Alliance, есть локальный браузерный инсталлятор. `со своими копиями игры`
+- [buffy-nx](https://github.com/FOTLabs/buffy-nx) — Buffy the Vampire Slayer: исходники и инсталлятор игры. `со своими копиями игры`
+- [conker-nx](https://github.com/bluecyborg-dev/conker-nx) — Conker: Live & Reloaded, статическая рекомпиляция. `со своими копиями игры`
 
-Порты на базе Android-сборок: игра запускается как есть под Horizon OS через слой-обёртку. Всем нужны свои файлы игры (`со своими копиями игры`).
+### GameCube / Wii U
+
+- [SwitchWaker](https://github.com/centollOS/SwitchWaker) — The Legend of Zelda: The Wind Waker (GameCube). `со своими копиями игры`
+- [dusklight-NX](https://github.com/givethesourceplox/dusklight-NX) — The Legend of Zelda: Twilight Princess, форк TwilitRealm/dusklight. `со своими копиями игры`
+- [sms-switch](https://github.com/chasem-dev/sms-switch) — Super Mario Sunshine: NRO на libnx, OpenGL через Mesa. `со своими копиями игры`
+- [SwitchWakerHD](https://github.com/centollOS/SwitchWakerHD) — The Legend of Zelda: The Wind Waker HD (Wii U), рекомпиляция с рендером deko3d. `со своими копиями игры`
+
+### Nintendo 64
+
+- [BM64Switch](https://github.com/paulodiasred/BM64Switch) — Bomberman 64, порт BM64Recomp через N64Recomp. `со своими копиями игры`
+- [StarCraft64-NX](https://github.com/gabryboy12-ai/StarCraft64-NX) — StarCraft 64. `со своими копиями игры`
+- [CBFD-Switch](https://github.com/DomazinUS/CBFD-Switch) — Conker's Bad Fur Day, нужен свой ROM. `со своими копиями игры`
+- [PaperBoat-Switch-Port](https://github.com/Angle-Brackets/PaperBoat-Switch-Port) — Paper Mario (N64), порт PaperBoat от Harbour Masters. `со своими копиями игры`
+
+### PlayStation 1 / 2 / PSP
+
+- [MsPacManMazeMadnessRecomp](https://github.com/adumah/MsPacManMazeMadnessRecomp) — Ms. Pac-Man Maze Madness (PS1), рекомпиляция на PSXRecomp. `со своими копиями игры`
+- [night100](https://github.com/matthewperiut/night100) — Scooby-Doo! Night of 100 Frights (PS2), рекомпиляция. `со своими копиями игры`
+- [jak-project-switch](https://github.com/fildicio/jak-project-switch) — Jak and Daxter: The Precursor Legacy (PS2) на OpenGOAL. `со своими копиями игры`
+- [ProjectCane](https://github.com/NaGaa95/ProjectCane) — Sly Cooper and the Thievius Raccoonus (PS2), форк theclub654/ProjectCane. `со своими копиями игры`
+- [VCSNX](https://github.com/fsalamancar/VCSNX) — GTA: Vice City Stories (PSP), собирается из своей копии игры. `со своими копиями игры`
+
+### ПК
+
+- [sh2-nx](https://github.com/cutarev/sh2-nx) — Silent Hill 2 (PC), статическая рекомпиляция в NRO. `со своими копиями игры`
+- [sh3-nx](https://github.com/cutarev/sh3-nx) — Silent Hill 3 (PC), тот же подход. `со своими копиями игры`
+- [sh4-nx](https://github.com/72ak/sh4-nx) — Silent Hill 4: The Room (PC, GOG), широкий экран. `со своими копиями игры`
+- [NearChuckle_nx](https://github.com/artslay/NearChuckle_nx) — Far Cry (2004), порт NearChuckle.
+- [outrun2-decomp](https://github.com/r4dius/outrun2-decomp) — OutRun 2006: Coast 2 Coast, декомпиляция с портом на консоль.
+- [openPREYswitch](https://github.com/hazevauks/openPREYswitch) — Prey (2006) на порту OpenPrey (id Tech 4), нужна PC-копия. `со своими копиями игры`
+- [SheepDogWolf-NX](https://github.com/adumah/SheepDogWolf-NX) — Sheep, Dog 'n' Wolf: Rewooled, нужна копия PC-игры. `со своими копиями игры`
+- [CDDAforSwitch](https://github.com/H-Wenfeng/CDDAforSwitch) — Cataclysm: Dark Days Ahead.
+- [ULTRAKILL-NX](https://github.com/Dimasick-git/ULTRAKILL-NX) — ULTRAKILL: гироскоп, FSR1, звук и видео; порт в разработке.
+- [pokemon-reloaded-nx](https://github.com/Honkonx/pokemon-reloaded-nx) — Pokémon Reloaded, фан-игра на рантайме OpenGMK.
+- [TweebboNX](https://github.com/Tweebbo/TweebboNX) — Tweebbo, браузерная игра в отеле, теперь нативно на консоли.
+- [pokesurvivor-switch](https://github.com/prolinecl/pokesurvivor-switch) — PokéSurvivor, порт веб-игры.
+
+### Порты на базе Android-сборок
+
+Игра запускается как есть под Horizon OS через слой-обёртку. Всем нужны свои файлы игры (`со своими копиями игры`).
 
 - [infinityblade_nx](https://github.com/aks796/infinityblade_nx) — Infinity Blade (UE3).
 - [abreloaded_nx](https://github.com/aks796/abreloaded_nx) — Angry Birds Reloaded.
@@ -173,24 +242,15 @@
 - [fallout2-ce-switch](https://github.com/ryandeering/fallout2-ce-switch) — Fallout 2 (Community Edition). `со своими копиями игры`
 - [ff4_3d_nx](https://github.com/NaGaa95/ff4_3d_nx) — Final Fantasy IV 3D Remake.
 - [vcmi_nx](https://github.com/NaGaa95/vcmi_nx) — Heroes of Might and Magic III (VCMI).
+- [jet-set-radio-nx](https://github.com/lemasterxar5/jet-set-radio-nx) — Jet Set Radio (Android ARMv7): 60 FPS и поддержка MOGA-геймпада.
 
-Прочие порты и обёртки:
+### Прочие порты и обёртки
 
 - [mari0_ae_nx](https://github.com/aks796/mari0_ae_nx) — Mari0: Alesan99's Entities (движок [love-nx](https://github.com/retronx-team/love-nx)).
 - [flappy_bird_nx](https://github.com/aks796/flappy_bird_nx) — Flappy Bird, нативный рерайт.
 - [Helltaker-switch](https://github.com/D3fau4/Helltaker-switch) — Helltaker.
 - [rayverse](https://github.com/D3fau4/rayverse) — Rayman 1.
 - [autorun](https://github.com/autorunhq/autorun) — Wine + FEX/Box64 + DXVK/VKD3D: запуск Windows-игр (x86/x64) прямо на консоли.
-
-### GTA V на Switch
-
-Порт, которого официально не существует: **GTA V Switch Port** от **Paralympics Productions** — GTA V Legacy с ПК превращается в NSP через патчер и репак-тул.
-
-- Распространяется через Discord (GitHub-репозитория нет).
-- Нужна своя копия игры, патчер только редактирует её файлы. `со своими копиями игры`
-- Пошаговая инструкция: [geekmaxxer.github.io/GTA5-NX-Tutorial](https://geekmaxxer.github.io/GTA5-NX-Tutorial/).
-- Вокруг порта есть экосистема модов: [радио-редактор](https://github.com/Geekmaxxer/gta-radio-editor), [обновлятор gameconfig.xml](https://github.com/Geekmaxxer/GTA5SwitchGCUpdater), [SDK для меню](https://github.com/Geekmaxxer/GTA5NX-MG-Menu).
-- Инструкция опирается на Tinfoil/sigpatches — это [серая зона](#серая-зона).
 
 ### GTA IV на Switch
 
@@ -200,7 +260,7 @@
 - [GTA4NX-Core3-Fix](https://github.com/koren699/GTA4NX-Core3-Fix) — патч `main.npdm`: разрешает порту третье ядро для аудиопотока, лечит заикания звука. Стабильные 30 FPS не обещает.
 - [ProjectTM](https://github.com/iy26adchak/ProjectTM) — независимый рекомпилятор той же игры, около 20% готовности: доходит до миссии «The Cousins Bellic». `со своими копиями игры`
 
-Декомпиляции и открытые движки:
+### Декомпиляции и открытые движки
 
 - [Ship of Harkinian](https://github.com/HarbourMasters/Shipwright) — Ocarina of Time.
 - [2Ship2Harkinian](https://github.com/HarbourMasters/2ship2harkinian) — Majora's Mask.
@@ -249,6 +309,8 @@
 
 - **Kosmos** — старая AIO-сборка, заменена на DeepSea/PYXIS.
 - **SX OS** — закрытая прошивка, проект мёртв.
+- **GTA V Switch Port** (Paralympics Productions) — порт GTA V на базе утёкшего кода, собирался в NSP через патчер. 28 сентября 2026 автор объявил о закрытии команды 3 октября после претензии Take-Two; исходники не выложены, сборки не распространяются. Осталась экосистема модов под старые сборки: [гайд](https://geekmaxxer.github.io/GTA5-NX-Tutorial/), [радио-редактор](https://github.com/Geekmaxxer/gta-radio-editor), [обновлятор gameconfig.xml](https://github.com/Geekmaxxer/GTA5SwitchGCUpdater), [SDK для меню](https://github.com/Geekmaxxer/GTA5NX-MG-Menu).
+- **Call of Duty 4: Modern Warfare** — порт удалён, живых зеркал нет.
 
 ## Правила подборки
 
